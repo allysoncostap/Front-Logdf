@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ChamadoService } from '../chamado.service';
 import { Chamado } from '../chamado.model';
 
+import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-chamado-read',
   templateUrl: './chamado-read.component.html',
@@ -14,7 +17,7 @@ export class ChamadoReadComponent implements OnInit {
   isLoading: boolean = false;
   error: string | null = null;
 
-  constructor(private service: ChamadoService) {}
+  constructor(private service: ChamadoService, private router: Router) {}
 
   ngOnInit(): void {
     this.findAll();
@@ -32,5 +35,10 @@ export class ChamadoReadComponent implements OnInit {
         this.isLoading = false;
       }
     );
+  }
+
+  irParaChamadoCreate() {
+  
+   this.router.navigate(["chamado/create"]);
   }
 }

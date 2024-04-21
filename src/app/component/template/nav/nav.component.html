@@ -1,16 +1,16 @@
 <mat-sidenav-container class="nav">
-    <mat-sidenav mode="side" [opened]="false">
-      <mat-nav-list>
-        <a mat-list-item href="#"><mat-icon>home</mat-icon></a>
-        <a routerLink="/chamado" routerLinkActive="router-link-active"  mat-list-item >Service </a>
-        
-        <a mat-list-item href="#">Usuario</a>
-    </mat-nav-list>
+  <mat-sidenav mode="side" [opened]="false">
+    <mat-nav-list>
+      <a mat-list-item href="#"><mat-icon>home</mat-icon></a>
+      <a routerLink="/chamado" routerLinkActive="router-link-active"  mat-list-item >Service </a>
+      
+      <a mat-list-item href="#">Usuario</a>
+  </mat-nav-list>
 </mat-sidenav>
 <mat-sidenav-content>
-        <button mat-icon-button (click)="toggleSidenav()">
-          <mat-icon></mat-icon>
-      </button>
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+      <button mat-icon-button (click)="toggleSidenav()">
+        <mat-icon></mat-icon>
+    </button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

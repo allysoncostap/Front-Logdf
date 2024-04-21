@@ -1,8 +1,4 @@
 export interface Chamado{
-id?:String;
-status:String;
-fila: String;
-date:String;
-
-
+descricao:string;
+usuarioId:number;
 }

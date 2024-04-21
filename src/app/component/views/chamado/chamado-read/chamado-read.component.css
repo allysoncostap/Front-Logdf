@@ -18,12 +18,13 @@
 
 .table {
     width: 100%;
-    background-color: rgb(164, 158, 245);
-    margin-bottom: 20%; /* Margem na parte inferior */
+    background-color: rgb(239, 238, 241);
+    margin-bottom: 1%; /* Margem na parte inferior */
 
 }
 .fundo-verde {
     background-color: rgb(94, 248, 94);
+    margin-right: 30%;
   }
 
   .fundo-amarelo {
@@ -31,6 +32,7 @@
   }
   .fundo-vermelho {
     background-color: rgb(248, 114, 114);
+    
   }
   .fundo-cinza{
     background-color: rgb(158, 155, 155);
@@ -38,3 +40,50 @@
   .fundo-azul{
     background-color: rgb(149, 122, 245);
   }
+
+  .coulunStatus{
+    width: 60px;
+  }
+  button{
+    
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+.bottoo{
+text-align: right;
+margin-bottom: 20%;
+}

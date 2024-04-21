@@ -20,4 +20,9 @@ export class ChamadoService {
         map(response => response as Chamado[])
       );
   }
+
+  create(usuarioId: number, chamado: any): Observable<any> {
+    const url = `${this.baseUrl}/chamados?usuario=${usuarioId}`;
+    return this.http.post<Chamado>(url, chamado);
+  }
 }
